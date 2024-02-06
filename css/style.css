@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Cute Font', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --primary: rgb(0, 255, 81);
+    --bg-primary: rgb(5, 175, 59);
+    --secondary: rgb(237, 140, 49);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-height: 45px;
+    height: 10vh;
+    /* border-bottom: 2px solid red; */
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    font-family: 'Ubuntu Mono';
+}
+
+nav span {
+    font-size: 1.5rem;
+    cursor: default;
+    font-weight: 800;
+}
+
+nav .nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+nav .nav2 a {
+    margin: 0 10px;
+    padding: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav .nav2 a:hover,
+.active {
+    border-bottom: 2px solid var(--primary);
+}
+
+section {
+    height: 100vh;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#about img {
+    height: 50%;
+    width: 40%;
+    min-height: 300px;
+    max-height: 600px;
+    min-width: 200px;
+    max-width: 450px;
+}
+
+#about .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 5px;
+    width: 30%;
+
+}
+
+#about .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .right h3,
+#about .left h3 {
+    font-size: 2rem;
+    text-align: center;
+    cursor: default;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#about .right {
+    width: 30%;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#about .right #typed {
+    color: var(--primary)
+}
+
+#skills,
+#project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#skills .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skills .con1,
+#skills .con2,
+#skills .con3 {
+    margin: 20px 5px;
+    cursor: default;
+}
+
+#skills .con1 #spc {
+    margin-bottom: 15px;
+}
+
+#skills .con1 img,
+#skills .con3 img,
+#skills .con2 img {
+    mix-blend-mode: normal;
+    max-height: 70px;
+    max-width: 50px;
+    background-color: transparent;
+}
+
+#skills .con1 .wrapper .item,
+#skills .con3 .wrapper .item,
+#skills .con2 .wrapper .item {
+    margin: 0 10px;
+    width: 15vw;
+    height: 15vh;
+    max-width: 200px;
+    min-width: 60px;
+    padding: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+}
+
+.wrapper .item p {
+    background-color: transparent;
+}
+
+#skills .con1 .wrapper .item:hover,
+#skills .con2 .wrapper .item:hover,
+#skills .con3 .wrapper .item:hover {
+    background-color: var(--secondary);
+}
+
+#skills h2,
+#project h2 {
+    text-align: center;
+    padding: 5px;
+    cursor: default;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+#project .con1 {
+    margin-top: 25px;
+}
+
+#project {
+    height: auto;
+    /* border: 2px solid red; */
+    padding: 10px;
+    font-family: 'Cute Font', sans-serif;
+
+}
+
+#project .con1 .grid-con,
+#project .con2 .grid-con,
+#project .con3 .grid-con {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#project .con1 .grid-con .item,
+#project .con2 .grid-con .item,
+#project .con3 .grid-con .item {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+#project .con3 .grid-con .item {
+    font-size: .8rem;
+
+}
+
+#project .con1 .grid-con .item:hover,
+#project .con2 .grid-con .item:hover,
+#project .con3 .grid-con .item:hover {
+    background-color: var(--secondary);
+
+}
+
+.item .sub1 {
+    padding: 2px;
+    height: 30px;
+    /* border: 2px solid rgb(49, 237, 124); */
+    width: 96%;
+    background: transparent;
+}
+
+.item .sub1 p {
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 5px;
+    cursor: default;
+
+}
+
+.item .sub2 {
+    padding: 2px;
+    width: 96%;
+    /* border: 2px solid rgb(49, 237, 124); */
+    background-color: transparent;
+    cursor: default;
+
+}
+
+.item .sub3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2px;
+    width: 96%;
+    background-color: transparent;
+    height: 30px;
+    /* border: 2px solid rgb(49, 237, 124); */
+}
+
+.item .sub2 .p1 {
+    background-color: transparent;
+    margin: 2px;
+    padding: 2px;
+    cursor: default;
+
+}
+
+.item .sub2 .p2 {
+    background-color: transparent;
+    margin: 2px;
+    padding: 2px;
+    cursor: default;
+}
+
+.item .sub3 a {
+    background-color: transparent;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+}
+
+.item .sub3 a:hover {
+    background-color: var(--bg-primary);
+}
+
+#project .con3 .item {
+    font-size: 1.1rem;
+}
+
+#contact {
+    margin-top: 20px;
+}
+
+#contact .grid-con {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 10px;
+}
+
+#contact .grid-con .social {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+}
+
+#contact .grid-con .social:hover,
+#contact .grid-con .others:hover {
+    background-color: var(--secondary);
+}
+
+#contact .grid-con .social h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background: transparent;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: default;
+}
+
+#contact .grid-con .social .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+}
+
+#contact .grid-con .social .item .logo img {
+    height: 50px;
+    margin: 10px;
+    background: transparent;
+}
+
+#contact .grid-con .social .item .logo,
+#contact .grid-con .others .item .logo {
+    background: none;
+}
+
+#contact .grid-con .social .item a,
+#contact .grid-con .others .item a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: transparent;
+}
+
+#contact .grid-con .others .item p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2rem;
+    cursor: default;
+}
+
+#contact .grid-con .social .item a:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+#contact .grid-con .others .item a:hover {
+    color: var(--primary);
+}
+
+#contact .grid-con .others {
+    /* border: 2px solid red; */
+    padding: 0 10px;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#contact .grid-con .others .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    background: transparent;
+}
+
+#contact .grid-con .others .item p {
+    font-size: 1.1rem;
+    background: transparent;
+}
+
+#contact .grid-con .others .item .logo img {
+    background: transparent;
+    height: 50px;
+    margin: 10px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+/* Media query */
+@media (max-width:404px) {
+
+    nav {
+        margin: 0 7px;
+    }
+
+    nav .nav2 a {
+        margin: 0 4px;
+        font-size: x-small;
+    }
+
+    #skills .con2 .wrapper .item {
+        margin: 0 7px;
+        padding: 8px;
+    }
+
+    #skills .con1 .wrapper .item {
+        width: auto;
+        min-width: 30px;
+        margin: 0;
+    }
+}
+
+@media (max-width:786px) {
+    nav {
+        margin: 0 10px;
+    }
+
+    nav .nav2 a {
+        margin: 0 5px;
+    }
+
+    #about .right h3 {
+        font-size: 1.75rem;
+    }
+
+    #skills .con1 .wrapper .item {
+
+        max-width: 60px;
+        margin: 0 5px;
+    }
+
+    .item .sub1 p {
+        font-size: 1.1rem;
+    }
+
+    #contact .grid-con {
+        grid-template-columns: auto;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    #contact .grid-con .social {
+        padding-top: 5px;
+    }
+
+    #contact .grid-con .others {
+        padding-top: 5px;
+        margin-top: 30px;
+    }
+
+    #contact .grid-con .social .item a,
+    #contact .grid-con .others .item a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:1024px) {
+    #about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about .left,
+    #about .right {
+        width: 100%;
+    }
+
+    #about .img {
+        /* width: 100%; */
+        min-height: 50%;
+    }
+
+    #skills .con1 .wrapper .item {
+        width: 110px;
+        padding: 2px;
+    }
+
+    #skills .con1 .wrapper .item:nth-child(3) p {
+        font-size: .8rem;
+    }
+
+    #skills .con1 img {
+        width: 35px;
+    }
+
+    #project {
+        height: auto;
+    }
+
+    #project .con1 .grid-con,
+    #project .con2 .grid-con,
+    #project .con3 .grid-con {
+        grid-template-columns: auto auto;
+    }
+
+    #project .con1 .grid-con .item,
+    #project .con2 .grid-con .item,
+    #project .con3 .grid-con .item {
+        width: 150px;
+    }
+}
