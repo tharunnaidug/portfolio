@@ -8,7 +8,8 @@
 
 :root {
     --primary: rgb(0, 255, 81);
-    --bg-primary: rgb(5, 175, 59);
+    --bg-primary: rgb(77, 226, 18);
+    --bg-secondary: rgb(18, 177, 226);
     --secondary: rgb(237, 140, 49);
 }
 
@@ -206,7 +207,7 @@ section {
     justify-content: space-between;
     flex-direction: column;
     /* border: 2px solid red; */
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
     border-radius: 5px;
     height: 200px;
     width: 200px;
@@ -285,7 +286,7 @@ section {
 }
 
 .item .sub3 a:hover {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
 }
 
 #project .con3 .item {
